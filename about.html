@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about ABC Web Consultancy Firm and our comprehensive IT solutions, including data analysis, internet provision services, and machine learning engineering.">
+    <title>About Us - ABC Web Consultancy Firm</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 25px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #1abc9c;
+        }
+
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-icon .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 4px 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        /* About Section */
+        .about {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2 {
+            font-size: 2.8rem;
+            margin-bottom: 25px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            color: #555;
+            text-align: center;
+        }
+
+        .expertise {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .expertise-item {
+            flex: 1 1 calc(33.333% - 50px);
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .expertise-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .expertise-item h4 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .expertise-item p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .why-choose-us {
+            list-style: none;
+            padding: 0;
+        }
+
+        .why-choose-us li {
+            background-color: #fff;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .why-choose-us li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .why-choose-us li strong {
+            color: #1abc9c;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #2c3e50;
+            color: #fff;
+            margin-top: 40px;
+            font-size: 1rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #2c3e50;
+                padding: 10px 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .expertise-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>ABC Web Consultancy Firm is a leading provider of IT solutions, dedicated to helping businesses achieve their goals through technology. With a team of experienced professionals, we deliver innovative and customized solutions to meet your unique needs. Our expertise spans across data analysis, internet provision services, and machine learning engineering, ensuring that your business stays ahead in the digital age.</p>
+        
+        <h3>Our Expertise</h3>
+        <div class="expertise">
+            <div class="expertise-item">
+                <h4>Data Analysis</h4>
+                <p>We specialize in transforming raw data into actionable insights. Our data analysis services include data collection, cleaning, visualization, and predictive analytics. Whether you need to understand customer behavior, optimize operations, or make data-driven decisions, our team is here to help.</p>
+            </div>
+            <div class="expertise-item">
+                <h4>Internet Provision Services</h4>
+                <p>We provide reliable and high-speed internet connectivity through point-to-point and fiber optic solutions. Our services are designed to meet the needs of businesses of all sizes, ensuring seamless connectivity and uninterrupted operations. With our robust infrastructure, you can count on us for fast and secure internet access.</p>
+            </div>
+            <div class="expertise-item">
+                <h4>Machine Learning Engineering</h4>
+                <p>Our machine learning engineers develop cutting-edge algorithms and models to solve complex business problems. From natural language processing to computer vision, we leverage the latest technologies to build intelligent systems that drive innovation and efficiency. Let us help you harness the power of AI to transform your business.</p>
+            </div>
+        </div>
+
+        <h3>Why Choose Us?</h3>
+        <ul class="why-choose-us">
+            <li><strong>Experienced Team:</strong> Our team of experts has years of experience in the IT industry, ensuring that you receive the highest quality services.</li>
+            <li><strong>Customized Solutions:</strong> We understand that every business is unique. That's why we offer tailored solutions to meet your specific needs.</li>
+            <li><strong>Cutting-Edge Technology:</strong> We stay up-to-date with the latest technological advancements to provide you with innovative solutions.</li>
+            <li><strong>Customer-Centric Approach:</strong> Your satisfaction is our priority. We work closely with you to ensure that our services exceed your expectations.</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2023 ABC Web Consultancy Firm. All rights reserved.</p>
+    </footer>
+    <script>
+        // Toggle mobile menu
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
